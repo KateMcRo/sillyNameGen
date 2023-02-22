@@ -17,6 +17,10 @@ Click the button to make a random name appear on the screen. You can click as ma
 
 ![Silly Name Generator Screenshot](assets/SillyNameSSv1.png)
 
+## Deployment
+
+[Silly Name Generator](https://katemcro.github.io/sillyNameGen/)
+
 ## License
 
 MIT License
