@@ -2,36 +2,43 @@ var randomizeBtn = document.querySelector("#randomize");
 
 
 // Variables (first, last, sillyName)
-var firstName = ["Basketball ", "Boulevard ", "Bandana ", "Biblical ", "Bahamas ", "Bronchitis ", "Bottomless ", "Badminton ", "Barnacle ", "Bystander "]
-var lastName = ["Chipotle", "Cabala", "Cathedral", "Chancellor", "Companion", "Commonwealth", "Customer", "Counterpart", "Corridor", "Celibate"]
+var firstName = ["Basketball ", "Boulevard ", "Bandana ", "Biblical ", "Buttondown ", "Bronchitis ", "Bottomless ", "Badminton ", "Barnacle ", "Bystander "]
+var lastName = ["Cucumber", "Cabala", "Cathedral", "Chancellor", "Companion", "Commonwealth", "Customer", "Counterpart", "Corridor", "Celibate"]
 
 var sillyName = ""
+var chosenFirst
+var chosenLast
+
+const sillyNameEl = document.getElementById("sillyName")
+
 
 // Functions (randomize selections, add together, return/print)
 function writeName () {
+    sillyName = ""
     randomFirst ()
     randomLast ()
-      
+    newName ()
+    sillyNameEl.innerText = sillyName   
 }
 
-function firstPick () {
-
-
+function newName () {
+    sillyName = chosenFirst += chosenLast
+    return sillyName
 }
 
 // Functions to randomize selects
 function randomFirst () {
     var randomizeFirst = Math.floor(Math.random() * firstName.length)
     var index = randomizeFirst
-    var chosenFirst = firstName[index] 
-    console.log(chosenFirst)   
+    chosenFirst = firstName[index]
+    return chosenFirst   
 }
 
 function randomLast () {
     var randomizeLast = Math.floor(Math.random() * lastName.length)
     var index = randomizeLast
-    var chosenLast = lastName[index] 
-    console.log(chosenLast)    
+    chosenLast = lastName[index] 
+    return chosenLast  
 }
 
 // Event listener
