@@ -1,3 +1,24 @@
+# Benedict Cumberbatch Silly Name Generator
+
+## Description
+
+This name generator offers silly alternative names for the popular actor with the unsual moniker. There are currently 10 avaiable options for first and last names that get randomized, added together, and displayed on the screen when you click the button. 
+
+- It was intended not intended to mock anyone.
+- I built this to practice the JavaScript skills I've been learning.
+- This build was more simple than others I've done but I'm excited by the prospect of adding to it.
+- I intend to replace the arrays with API calls in the future for a more robust product.
+
+
+## Usage
+
+Click the button to make a random name appear on the screen. You can click as many times as you like to generate new name combinations.
+
+
+![Silly Name Generator Screenshot](assets/SillyNameSSv1.png)
+
+## License
+
 MIT License
 
 Copyright (c) 2023 Kate Rogers
